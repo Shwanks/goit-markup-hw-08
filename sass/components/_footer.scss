@@ -1,0 +1,189 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-bg-color;
+}
+
+.footer__container {
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+        text-align: start;
+    }
+}
+
+.footer__address-container {
+    @media screen and (max-width: ($tablet - $krok)) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    color: $primary-bg-color;
+}
+
+.footer__wrap-content {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+
+        @media screen and (max-width: ($desktop - $krok)) {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+// ------------------------------------
+//-------------------------------------
+.address {
+    font-style: inherit;
+}
+
+.address__item {
+    &:not(:last-child) {
+        margin-bottom: 8px;
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 9px;
+        }
+    }
+}
+
+.address__link {
+    display: inline-block;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+
+    transition: color $transition-animation;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    &--white {
+        color: $primary-bg-color;
+    }
+}
+
+//-------------------------------------------
+//-------------------------------------------
+.footer__social {
+    @media screen and (max-width: ($tablet - $krok)) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer__social-title {
+    @extend %titleFooter;
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__social-item {
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.footer__social-link {
+    @include centeredFlex();
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: $primary-bg-color;
+
+    transition: background-color $transition-animation;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.footer__social-icon {
+    fill: currentColor;
+}
+
+//-------------------------------------------------
+//-------------------------------------------------
+
+.footer__subscription {
+    @media screen and (min-width: $desktop) {
+        margin-left: auto;
+    }
+}
+
+.footer__subscription-title {
+    @extend %titleFooter;
+}
+
+.footer__subscription-form {
+    @media screen and (min-width: $desktop) {
+        display: inline-flex;
+    }
+}
+
+
+.footer__subscription-input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    @media screen and (min-width: $mobile) and (max-width: ($desktop - $krok)) {
+        width: 450px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin-right: 12px;
+    }
+}
+
+.footer__form-btn {
+    @include centeredFlex();
+    @extend %btn;
+
+    @media screen and (max-width: ($desktop - $krok)) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.footer__subscription-icon {
+    margin-left: 10px;
+    fill: currentColor;
+}

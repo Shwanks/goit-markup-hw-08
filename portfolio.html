@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description"
+        content="Створюємо, оптимізуємо сайти будь якої складності, а також просуваємо в пошукових системах. ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>WebStudio - Портфолио</title>
+</head>
+
+<body>
+
+    <!-- Шапка сайту -->
+    <header class="header">
+        <div class="header__container">
+            <a href="./" lang="en" class="header__logo logo"><span class="logo__accent">Web</span>Studio</a>
+            <div class="header__menu-container js-menu-container">
+                <button type="button" aria-label="Закрыть меню"
+                    class="header__menu-btn header__menu-btn--close js-close-menu">
+                    <svg width="40" height="40" class="header__menu-icon">
+                        <use href="./images/icons.svg#menu-close"></use>
+                    </svg>
+                </button>
+                <nav class="header__site-nav">
+                    <ul class="site-nav__list">
+                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+                        <li class="site-nav__item"><a href="./portfolio.html"
+                                class="site-nav__link current">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="#contact" class="site-nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contact-nav">
+                    <ul class="contact-nav__list">
+                        <li class="contact-nav__item">
+                            <a href="mailto:info@devstudio.com" class="contact-nav__link contact-nav__link--small">
+                                <svg width="16" height="12" class="contact-nav__icon">
+                                    <use href="./images/icons.svg#envelope"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contact-nav__item">
+                            <a href="tel:+380961111111" class="contact-nav__link contact-nav__link--blue">
+                                <svg width="10" height="16" class="contact-nav__icon">
+                                    <use href="./images/icons.svg#smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">Instagram</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">Twitter</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">Facebook</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" aria-label="Меню" class="header__menu-btn js-open-menu">
+                <svg width="40" height="40" class="header__menu-icon">
+                    <use class="menu-open" href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Портфоліо -->
+    <main>
+        <section class="work">
+            <div class="work__container">
+                <h1 class="work__title">Приклади робіт</h1>
+
+                <!-- Фільтр -->
+                <ul class="work__filter-list">
+                    <li class="work__filter-item"><button type="button" class="work__filter-btn">Все</button>
+                    </li>
+                    <li class="work__filter-item"><button type="button" class="work__filter-btn">Веб-саиты</button></li>
+                    <li class="work__filter-item"><button type="button" class="work__filter-btn">Приложения</button>
+                    </li>
+                    <li class="work__filter-item"><button type="button" class="work__filter-btn">Дизайн</button></li>
+                    <li class="work__filter-item"><button type="button" class="work__filter-btn">Маркетинг</button></li>
+                </ul>
+
+                <!-- Роботи -->
+                <ul class="work__list">
+                    <li class="work__item">
+                        <a href="#" class="work__link">
+                            <div class="work__card-thumb">
+                                <picture>
+                                    <source srcset="./images/project-1_370.webp 1x, ./images/project-1_740.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/project-1_370.webp 370w, ./images/project-1_740.webp 740w"
+                                        type="image/webp" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 33.333vw">
+                                    <source srcset="./images/project-1_370.jpg 1x, ./images/project-1_740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/project-1_370.jpg 370w, ./images/project-1_740.jpg 740w"
+                                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 33.333vw">
+
+                                    <source srcset="./images/project-1_354.webp 1x, ./images/project-1_708.webp 2x"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-1_354.webp 354w, ./images/project-1_708.webp 708w"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+                                    <source srcset="./images/project-1_354.jpg 1x, ./images/project-1_708.jpg 2x"
+                                        media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-1_354.jpg 354w, ./images/project-1_708.jpg 708w"
+                                        media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+
+                                    <source srcset="./images/project-1_450.webp 1x, ./images/project-1_900.webp 2x"
+                                        type="image/webp" media="(min-width: 385px)">
+                                    <source srcset="./images/project-1_450.webp 450w, ./images/project-1_900.webp 900w"
+                                        type="image/webp" media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+                                    <source srcset="./images/project-1_450.jpg 1x, ./images/project-1_900.jpg 2x"
+                                        media="(min-width: 385px)">
+                                    <source srcset="./images/project-1_450.jpg 450w, ./images/project-1_900.jpg 900w"
+                                        media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+
+                                    <img src="./images/project-1_370.jpg" alt="Пример работы">
+                                </picture>
+
+                                <div class="work__overlay">
+                                    <p class="work__pre-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю
+                                        получить
+                                        исчерпывающие сведения <br>о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="work__card-content">
+                                <h2 class="work__card-title">Технокряк</h2>
+                                <p class="work__card-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work__item">
+                        <a href="#" class="work__link">
+                            <div class="work__card-thumb">
+                                <picture>
+                                    <source srcset="./images/project-2_370.webp 1x, ./images/project-2_740.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/project-2_370.webp 370w, ./images/project-2_740.webp 740w"
+                                        type="image/webp" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 33.333vw">
+                                    <source srcset="./images/project-2_370.jpg 1x, ./images/project-2_740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/project-2_370.jpg 370w, ./images/project-2_740.jpg 740w"
+                                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 33.333vw">
+
+                                    <source srcset="./images/project-2_354.webp 1x, ./images/project-2_708.webp 2x"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-2_354.webp 354w, ./images/project-2_708.webp 708w"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+                                    <source srcset="./images/project-2_354.jpg 1x, ./images/project-2_708.jpg 2x"
+                                        media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-2_354.jpg 354w, ./images/project-2_708.jpg 708w"
+                                        media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+
+                                    <source srcset="./images/project-2_450.webp 1x, ./images/project-2_900.webp 2x"
+                                        type="image/webp" media="(min-width: 385px)">
+                                    <source srcset="./images/project-2_450.webp 450w, ./images/project-2_900.webp 900w"
+                                        type="image/webp" media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+                                    <source srcset="./images/project-2_450.jpg 1x, ./images/project-2_900.jpg 2x"
+                                        media="(min-width: 385px)">
+                                    <source srcset="./images/project-2_450.jpg 450w, ./images/project-2_900.jpg 900w"
+                                        media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+
+                                    <img src="./images/project-2_370.jpg" alt="Пример работы">
+                                </picture>
+                                <div class="work__overlay">
+                                    <p class="work__pre-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю
+                                        получить
+                                        исчерпывающие сведения <br>о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="work__card-content">
+                                <h2 class="work__card-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="work__card-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work__item">
+                        <a href="#" class="work__link">
+                            <div class="work__card-thumb">
+                                <picture>
+                                    <source srcset="./images/project-3_370.webp 1x, ./images/project-3_740.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/project-3_370.webp 370w, ./images/project-3_740.webp 740w"
+                                        type="image/webp" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 33.333vw">
+                                    <source srcset="./images/project-3_370.jpg 1x, ./images/project-3_740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/project-3_370.jpg 370w, ./images/project-3_740.jpg 740w"
+                                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 33.333vw">
+
+                                    <source srcset="./images/project-3_354.webp 1x, ./images/project-3_708.webp 2x"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-3_354.webp 354w, ./images/project-3_708.webp 708w"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+                                    <source srcset="./images/project-3_354.jpg 1x, ./images/project-3_708.jpg 2x"
+                                        media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-3_354.jpg 354w, ./images/project-3_708.jpg 708w"
+                                        media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+
+                                    <source srcset="./images/project-3_450.webp 1x, ./images/project-3_900.webp 2x"
+                                        type="image/webp" media="(min-width: 385px)">
+                                    <source srcset="./images/project-3_450.webp 450w, ./images/project-3_900.webp 900w"
+                                        type="image/webp" media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+                                    <source srcset="./images/project-3_450.jpg 1x, ./images/project-3_900.jpg 2x"
+                                        media="(min-width: 385px)">
+                                    <source srcset="./images/project-3_450.jpg 450w, ./images/project-3_900.jpg 900w"
+                                        media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+
+                                    <img src="./images/project-3_370.jpg" alt="Пример работы">
+                                </picture>
+                                <div class="work__overlay">
+                                    <p class="work__pre-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю
+                                        получить
+                                        исчерпывающие сведения <br>о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="work__card-content">
+                                <h2 class="work__card-title">Ресторан Seafood</h2>
+                                <p class="work__card-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work__item">
+                        <a href="#" class="work__link">
+                            <div class="work__card-thumb">
+                                <picture>
+                                    <source srcset="./images/project-4_370.webp 1x, ./images/project-4_740.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/project-4_370.webp 370w, ./images/project-4_740.webp 740w"
+                                        type="image/webp" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 33.333vw">
+                                    <source srcset="./images/project-4_370.jpg 1x, ./images/project-4_740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/project-4_370.jpg 370w, ./images/project-4_740.jpg 740w"
+                                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 33.333vw">
+
+                                    <source srcset="./images/project-4_354.webp 1x, ./images/project-4_708.webp 2x"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-4_354.webp 354w, ./images/project-4_708.webp 708w"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+                                    <source srcset="./images/project-4_354.jpg 1x, ./images/project-4_708.jpg 2x"
+                                        media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-4_354.jpg 354w, ./images/project-4_708.jpg 708w"
+                                        media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+
+                                    <source srcset="./images/project-4_450.webp 1x, ./images/project-4_900.webp 2x"
+                                        type="image/webp" media="(min-width: 385px)">
+                                    <source srcset="./images/project-4_450.webp 450w, ./images/project-4_900.webp 900w"
+                                        type="image/webp" media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+                                    <source srcset="./images/project-4_450.jpg 1x, ./images/project-4_900.jpg 2x"
+                                        media="(min-width: 385px)">
+                                    <source srcset="./images/project-4_450.jpg 450w, ./images/project-4_900.jpg 900w"
+                                        media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+
+                                    <img src="./images/project-4_370.jpg" alt="Пример работы">
+                                </picture>
+                                <div class="work__overlay">
+                                    <p class="work__pre-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю
+                                        получить
+                                        исчерпывающие сведения <br>о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="work__card-content">
+                                <h2 class="work__card-title">Проект Prime</h2>
+                                <p class="work__card-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work__item">
+                        <a href="#" class="work__link">
+                            <div class="work__card-thumb">
+                                <picture>
+                                    <source srcset="./images/project-5_370.webp 1x, ./images/project-5_740.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/project-5_370.webp 370w, ./images/project-5_740.webp 740w"
+                                        type="image/webp" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 33.333vw">
+                                    <source srcset="./images/project-5_370.jpg 1x, ./images/project-5_740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/project-5_370.jpg 370w, ./images/project-5_740.jpg 740w"
+                                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 33.333vw">
+
+                                    <source srcset="./images/project-5_354.webp 1x, ./images/project-5_708.webp 2x"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-5_354.webp 354w, ./images/project-5_708.webp 708w"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+                                    <source srcset="./images/project-5_354.jpg 1x, ./images/project-5_708.jpg 2x"
+                                        media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-5_354.jpg 354w, ./images/project-5_708.jpg 708w"
+                                        media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+
+                                    <source srcset="./images/project-5_450.webp 1x, ./images/project-5_900.webp 2x"
+                                        type="image/webp" media="(min-width: 385px)">
+                                    <source srcset="./images/project-5_450.webp 450w, ./images/project-5_900.webp 900w"
+                                        type="image/webp" media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+                                    <source srcset="./images/project-5_450.jpg 1x, ./images/project-5_900.jpg 2x"
+                                        media="(min-width: 385px)">
+                                    <source srcset="./images/project-5_450.jpg 450w, ./images/project-5_900.jpg 900w"
+                                        media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+
+                                    <img src="./images/project-5_370.jpg" alt="Пример работы">
+                                </picture>
+                                <div class="work__overlay">
+                                    <p class="work__pre-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю
+                                        получить
+                                        исчерпывающие сведения <br>о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="work__card-content">
+                                <h2 class="work__card-title">Проект Boxes</h2>
+                                <p class="work__card-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work__item">
+                        <a href="#" class="work__link">
+                            <div class="work__card-thumb">
+                                <picture>
+                                    <source srcset="./images/project-6_370.webp 1x, ./images/project-6_740.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/project-6_370.webp 370w, ./images/project-6_740.webp 740w"
+                                        type="image/webp" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 33.333vw">
+                                    <source srcset="./images/project-6_370.jpg 1x, ./images/project-6_740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/project-6_370.jpg 370w, ./images/project-6_740.jpg 740w"
+                                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 33.333vw">
+
+                                    <source srcset="./images/project-6_354.webp 1x, ./images/project-6_708.webp 2x"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-6_354.webp 354w, ./images/project-6_708.webp 708w"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+                                    <source srcset="./images/project-6_354.jpg 1x, ./images/project-6_708.jpg 2x"
+                                        media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-6_354.jpg 354w, ./images/project-6_708.jpg 708w"
+                                        media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+
+                                    <source srcset="./images/project-6_450.webp 1x, ./images/project-6_900.webp 2x"
+                                        type="image/webp" media="(min-width: 385px)">
+                                    <source srcset="./images/project-6_450.webp 450w, ./images/project-6_900.webp 900w"
+                                        type="image/webp" media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+                                    <source srcset="./images/project-6_450.jpg 1x, ./images/project-6_900.jpg 2x"
+                                        media="(min-width: 385px)">
+                                    <source srcset="./images/project-6_450.jpg 450w, ./images/project-6_900.jpg 900w"
+                                        media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+
+                                    <img src="./images/project-6_370.jpg" alt="Пример работы">
+                                </picture>
+                                <div class="work__overlay">
+                                    <p class="work__pre-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю
+                                        получить
+                                        исчерпывающие сведения <br>о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="work__card-content">
+                                <h2 class="work__card-title">Inspiration has no Borders</h2>
+                                <p class="work__card-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work__item">
+                        <a href="#" class="work__link">
+                            <div class="work__card-thumb">
+                                <picture>
+                                    <source srcset="./images/project-7_370.webp 1x, ./images/project-7_740.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/project-7_370.webp 370w, ./images/project-7_740.webp 740w"
+                                        type="image/webp" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 33.333vw">
+                                    <source srcset="./images/project-7_370.jpg 1x, ./images/project-7_740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/project-7_370.jpg 370w, ./images/project-7_740.jpg 740w"
+                                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 33.333vw">
+
+                                    <source srcset="./images/project-7_354.webp 1x, ./images/project-7_708.webp 2x"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-7_354.webp 354w, ./images/project-7_708.webp 708w"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+                                    <source srcset="./images/project-7_354.jpg 1x, ./images/project-7_708.jpg 2x"
+                                        media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-7_354.jpg 354w, ./images/project-7_708.jpg 708w"
+                                        media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+
+                                    <source srcset="./images/project-7_450.webp 1x, ./images/project-7_900.webp 2x"
+                                        type="image/webp" media="(min-width: 385px)">
+                                    <source srcset="./images/project-7_450.webp 450w, ./images/project-7_900.webp 900w"
+                                        type="image/webp" media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+                                    <source srcset="./images/project-7_450.jpg 1x, ./images/project-7_900.jpg 2x"
+                                        media="(min-width: 385px)">
+                                    <source srcset="./images/project-7_450.jpg 450w, ./images/project-7_900.jpg 900w"
+                                        media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+
+                                    <img src="./images/project-7_370.jpg" alt="Пример работы">
+                                </picture>
+                                <div class="work__overlay">
+                                    <p class="work__pre-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю
+                                        получить
+                                        исчерпывающие сведения <br>о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="work__card-content">
+                                <h2 class="work__card-title">Издание Limited Edition</h2>
+                                <p class="work__card-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work__item">
+                        <a href="#" class="work__link">
+                            <div class="work__card-thumb">
+                                <picture>
+                                    <source srcset="./images/project-8_370.webp 1x, ./images/project-8_740.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/project-8_370.webp 370w, ./images/project-8_740.webp 740w"
+                                        type="image/webp" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 33.333vw">
+                                    <source srcset="./images/project-8_370.jpg 1x, ./images/project-8_740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/project-8_370.jpg 370w, ./images/project-8_740.jpg 740w"
+                                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 33.333vw">
+
+                                    <source srcset="./images/project-8_354.webp 1x, ./images/project-8_708.webp 2x"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-8_354.webp 354w, ./images/project-8_708.webp 708w"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+                                    <source srcset="./images/project-8_354.jpg 1x, ./images/project-8_708.jpg 2x"
+                                        media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-8_354.jpg 354w, ./images/project-8_708.jpg 708w"
+                                        media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+
+                                    <source srcset="./images/project-8_450.webp 1x, ./images/project-8_900.webp 2x"
+                                        type="image/webp" media="(min-width: 385px)">
+                                    <source srcset="./images/project-8_450.webp 450w, ./images/project-8_900.webp 900w"
+                                        type="image/webp" media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+                                    <source srcset="./images/project-8_450.jpg 1x, ./images/project-8_900.jpg 2x"
+                                        media="(min-width: 385px)">
+                                    <source srcset="./images/project-8_450.jpg 450w, ./images/project-8_900.jpg 900w"
+                                        media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+
+                                    <img src="./images/project-8_370.jpg" alt="Пример работы">
+                                </picture>
+                                <div class="work__overlay">
+                                    <p class="work__pre-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю
+                                        получить
+                                        исчерпывающие сведения <br>о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="work__card-content">
+                                <h2 class="work__card-title">Проект LAB</h2>
+                                <p class="work__card-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work__item">
+                        <a href="#" class="work__link">
+                            <div class="work__card-thumb">
+                                <picture>
+                                    <source srcset="./images/project-9_370.webp 1x, ./images/project-9_740.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/project-9_370.webp 370w, ./images/project-9_740.webp 740w"
+                                        type="image/webp" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 33.333vw">
+                                    <source srcset="./images/project-9_370.jpg 1x, ./images/project-9_740.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/project-9_370.jpg 370w, ./images/project-9_740.jpg 740w"
+                                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 33.333vw">
+
+                                    <source srcset="./images/project-9_354.webp 1x, ./images/project-9_708.webp 2x"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-9_354.webp 354w, ./images/project-9_708.webp 708w"
+                                        type="image/webp" media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+                                    <source srcset="./images/project-9_354.jpg 1x, ./images/project-9_708.jpg 2x"
+                                        media="(max-width: 384px), (min-width: 768px)">
+                                    <source srcset="./images/project-9_354.jpg 354w, ./images/project-9_708.jpg 708w"
+                                        media="(max-width: 384px), (min-width: 768px)"
+                                        sizes="(max-width: 384px) 100vw, (min-width: 768px) 50vw">
+
+                                    <source srcset="./images/project-9_450.webp 1x, ./images/project-9_900.webp 2x"
+                                        type="image/webp" media="(min-width: 385px)">
+                                    <source srcset="./images/project-9_450.webp 450w, ./images/project-9_900.webp 900w"
+                                        type="image/webp" media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+                                    <source srcset="./images/project-9_450.jpg 1x, ./images/project-9_900.jpg 2x"
+                                        media="(min-width: 385px)">
+                                    <source srcset="./images/project-9_450.jpg 450w, ./images/project-9_900.jpg 900w"
+                                        media="(min-width: 385px)" sizes="(min-width: 385px) 100vw">
+
+                                    <img src="./images/project-9_370.jpg" alt="Пример работы">
+                                </picture>
+                                <div class="work__overlay">
+                                    <p class="work__pre-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю
+                                        получить
+                                        исчерпывающие сведения <br>о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="work__card-content">
+                                <h2 class="work__card-title">Growing Business</h2>
+                                <p class="work__card-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Підвал -->
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__wrap-content">
+                <!-- Адрес -->
+                <div class="footer__address-container">
+                    <a href="./" lang="en" class="footer__logo logo "><span class="logo__accent">Web</span>Studio</a>
+                    <address id="contact" class="address">
+                        <ul class="address__list">
+                            <li class="address__item"><a href="https://goo.gl/maps/qfHzh91Hibz9nCDFA" target="_blank"
+                                    rel="noopener noreferrer" class="address__link address__link--white">г. Киев, пр-т
+                                    Леси
+                                    Украинки,
+                                    26</a></li>
+                            <li class="address__item"><a href="mailto:info@example.com"
+                                    class="address__link">info@example.com</a>
+                            </li>
+                            <li class="address__item"><a href="tel:+380991111111" class="address__link">+38 099
+                                    111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <!-- Приєднуйтесь -->
+                <section class="footer__social">
+                    <h3 class="footer__social-title">присоединяйтесь</h3>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram" class="footer__social-link">
+                                <svg width="20" height="20" class="footer__social-icon">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                                class="footer__social-link">
+                                <svg width="20" height="20" class="footer__social-icon">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook" class="footer__social-link">
+                                <svg width="20" height="20" class="footer__social-icon">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn" class="footer__social-link">
+                                <svg width="20" height="20" class="footer__social-icon">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Форма підписки -->
+            <section class="footer__subscription">
+                <h3 class="footer__subscription-title">Подпишитесь на рассылку</h3>
+                <form class="footer__subscription-form">
+                    <label class="footer__subscription-label">
+                        <input type="email" name="mail" placeholder="E-mail" class="footer__subscription-input">
+                    </label>
+                    <button type="submit" class="btn footer__form-btn">Подписаться
+                        <svg width="24px" height="24px" class="footer__subscription-icon">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </section>
+        </div>
+
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+
+</body>
+
+</html>

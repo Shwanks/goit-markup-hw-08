@@ -1,0 +1,45 @@
+.practic {
+    display: none;
+    @include paddingSection();
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+    }
+}
+
+.practic__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.practic__list {
+    @include marginColumn();
+}
+
+.practic__item {
+    position: relative;
+    @include contentColumn($column: 3);
+}
+
+.practic__thumb {
+    position: relative;
+}
+
+.practic__img-title {
+    @extend %titleFooter;
+    display: block;
+    margin: 0;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+}
